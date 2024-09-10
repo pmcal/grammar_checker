@@ -1,0 +1,15 @@
+{
+  "modifications": [
+    {
+      "wrong_sentence": "HEllo, my name Is Pedro.",
+      "corrected_sentence": "Hello, my name is Pedro.",
+      "type_of_error": "Capitalization error"
+    },
+    {
+      "wrong_sentence": "Im from portugal and been very happy in Germnany",
+      "corrected_sentence": "I'm from Portugal and have been very happy in Germany.",
+      "type_of_error": "Contraction error and tense error"
+    }
+  ],
+  "full_corrected_text": "Hello, my name is Pedro. I'm from Portugal and have been very happy in Germany."
+}

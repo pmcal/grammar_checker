@@ -1,0 +1,15 @@
+{
+  "modifications": [
+    {
+      "wrong_sentence": "Can I haz cheeseburguer?",
+      "corrected_sentence": "Can I have a cheeseburger?",
+      "type_of_error": "Informal language and spelling mistake"
+    },
+    {
+      "wrong_sentence": "IF i fitz I siz",
+      "corrected_sentence": "If I fit, I sit.",
+      "type_of_error": "Capitalization and spelling mistakes"
+    }
+  ],
+  "full_corrected_text": "Can I have a cheeseburger? If I fit, I sit."
+}

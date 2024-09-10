@@ -1,0 +1,45 @@
+{
+  "modifications": [
+    {
+      "wrong_sentence": "The cat were sitting on the mat, looking around curiously.",
+      "corrected_sentence": "The cat was sitting on the mat, looking around curiously.",
+      "type_of_error": "Subject-verb agreement"
+    },
+    {
+      "wrong_sentence": "its eyes were big and it’s tail was moving slow.",
+      "corrected_sentence": "Its eyes were big and its tail was moving slowly.",
+      "type_of_error": "Incorrect use of \"it’s\" (should be \"its\") and adverb form (should be \"slowly\")"
+    },
+    {
+      "wrong_sentence": "Suddenly, a loud noise come from the door and the cat jump off the mat quickly.",
+      "corrected_sentence": "Suddenly, a loud noise came from the door and the cat jumped off the mat quickly.",
+      "type_of_error": "Tense consistency and subject-verb agreement"
+    },
+    {
+      "wrong_sentence": "The birds outside on the tree sings loudly, they don’t seem to be bother by the noise.",
+      "corrected_sentence": "The birds outside in the tree sing loudly; they don’t seem to be bothered by the noise.",
+      "type_of_error": "Subject-verb agreement, preposition choice, and incorrect verb form (should be \"bothered\")"
+    },
+    {
+      "wrong_sentence": "In the kitchen, my mom cooking dinner and my dad were reading the newspaper.",
+      "corrected_sentence": "In the kitchen, my mom was cooking dinner and my dad was reading the newspaper.",
+      "type_of_error": "Subject-verb agreement and missing verb 'was' for the first subject"
+    },
+    {
+      "wrong_sentence": "I asks my brother where is the TV remote at, but he didnt knew.",
+      "corrected_sentence": "I asked my brother where the TV remote was, but he didn't know.",
+      "type_of_error": "Tense consistency, incorrect verb form (should be \"asked\" and \"know\"), and word order"
+    },
+    {
+      "wrong_sentence": "Everyone in the house seem calm, but the cat still looked nervous from the sudden sound.",
+      "corrected_sentence": "Everyone in the house seems calm, but the cat still looked nervous from the sudden sound.",
+      "type_of_error": "Subject-verb agreement"
+    },
+    {
+      "wrong_sentence": "I decided to go for a walk outside, hoping it will clear up my head and help me relaxed.",
+      "corrected_sentence": "I decided to go for a walk outside, hoping it would clear up my head and help me relax.",
+      "type_of_error": "Tense consistency and incorrect verb form (should be \"relax\")"
+    }
+  ],
+  "full_corrected_text": "The cat was sitting on the mat, looking around curiously. Its eyes were big and its tail was moving slowly. Suddenly, a loud noise came from the door and the cat jumped off the mat quickly. The birds outside in the tree sing loudly; they don’t seem to be bothered by the noise. In the kitchen, my mom was cooking dinner and my dad was reading the newspaper. I asked my brother where the TV remote was, but he didn't know. Everyone in the house seems calm, but the cat still looked nervous from the sudden sound. I decided to go for a walk outside, hoping it would clear up my head and help me relax."
+}
