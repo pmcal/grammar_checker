@@ -84,7 +84,7 @@
 
 
 
-## Examples
+## **Examples**
 
 I have included three examples in this repo. Let's have a look at one in the README:
 
