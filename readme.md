@@ -20,16 +20,16 @@
 
 1. **Create a virtual environment** :
 
-   \`\`\`bash
+    ```bash
    python3 -m venv venv
    source venv/bin/activate
-   \`\`\`
+   ```
 
 2. **Install dependencies**:
 
-   \`\`\`bash
+   ```bash
    pip install -r requirements.txt
-   \`\`\`
+   ```
 
    This will install the necessary libraries, including Flask, Pydantic, and OpenAI.
 
@@ -38,20 +38,20 @@
 
     Set your OpenAI API key as an environment variable:
 
-   \`\`\`bash
+   ```bash
     export OPENAI_API_KEY=your-api-key-here
-    \`\`\`
+    ```
 
     It was unclear to me if you needed my own API key, if so please just ask.
 
 
 4. **Run the Flask app**:
 
-   \`\`\`bash
+   ```bash
    flask run
-   \`\`\`
+   ```
 
-   The app should now be running at \`http://127.0.0.1:5000\`.
+   The app should now be running at `http://127.0.0.1:5000`.
 
 
 5. **Make POST request using script, or directly**
@@ -74,7 +74,9 @@
      If you prefer to make the request manually, you can use the following `curl` command:
 
      ```bash
-     curl -X POST http://127.0.0.1:5000/check-grammar        -H "Content-Type: application/json"        -d @input.json -o output.json
+     curl -X POST http://127.0.0.1:5000/check-grammar
+     -H "Content-Type: application/json"
+     -d @input.json -o output.json
      ```
 
      This will send the contents of `input.json` to the API and save the response in `output.json`.
