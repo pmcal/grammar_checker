@@ -3,9 +3,10 @@
 
 ## Table of Contents
 1. [Running the code](#running-the-code)
-2. [Design Choices](#design-choices)
-3. [Challenges Faced](#challenges-faced)
-4. [Future Improvements](#future-improvements)
+2. [Examples](#examples)
+3. [Design Choices](#design-choices)
+4. [Challenges Faced](#challenges-faced)
+5. [Future Improvements](#future-improvements)
 
 ---
 
@@ -82,56 +83,52 @@
         This will send the contents of `input.json` to the API and save the response in `output.json`.
 
 
---- 
 
-## **Examples**:
+## Examples
 
-    I have included three examples in this repo. Let's have a look at one in the readme:
+I have included three examples in this repo. Let's have a look at one in the README:
 
-     ```bash
-     ./check_grammar.sh example_input1.json example_output1.json
-     ```
+```bash
+./check_grammar.sh example_input1.json example_output1.json
+```
 
-     In this case, the input file contains the following:
+In this case, the input file contains the following:
 
-     ```json
-        {
-            "raw_text": "HEllo, my name Is Pedro. Im from portugal and been very happy in Germnany"
-        }
-     ```
+```json
+{
+  "raw_text": "HEllo, my name Is Pedro. Im from portugal and been very happy in Germnany"
+}
+```
 
-     The output was written to `example_output1.json` with the corrected text and error details.
-     In this instance, `example_output1.json` looks like this:
+The output was written to `example_output1.json` with the corrected text and error details.
+In this instance, `example_output1.json` looks like this:
 
-     ```json
-        {
-        "modifications": [
-            {
-            "wrong_sentence": "HEllo, my name Is Pedro.",
-            "corrected_sentence": "Hello, my name is Pedro.",
-            "type_of_error": "Capitalization error"
-            },
-            {
-            "wrong_sentence": "Im from portugal and been very happy in Germnany",
-            "corrected_sentence": "I'm from Portugal and have been very happy in Germany.",
-            "type_of_error": "Contraction error and tense error"
-            }
-        ],
-        "full_corrected_text": "Hello, my name is Pedro. I'm from Portugal and have been very happy in Germany."
-        }
-    ```
+```json
+{
+  "modifications": [
+    {
+      "wrong_sentence": "HEllo, my name Is Pedro.",
+      "corrected_sentence": "Hello, my name is Pedro.",
+      "type_of_error": "Capitalization error"
+    },
+    {
+      "wrong_sentence": "Im from portugal and been very happy in Germnany",
+      "corrected_sentence": "I'm from Portugal and have been very happy in Germany.",
+      "type_of_error": "Contraction error and tense error"
+    }
+  ],
+  "full_corrected_text": "Hello, my name is Pedro. I'm from Portugal and have been very happy in Germany."
+}
+```
 
-    The second example is also short, while the third contains a longer paragraph full of errors. Their
-    output files can also be found in this repo.
-
-
+The second example is also short, while the third contains a longer paragraph full of errors. Their output files can also be found in this repo.
 
 ---
 
 ## **Design Choices**
 
 - Used Flask for minimalistic backend design.
-- Used Openai's model gpt-4o-2024-08-06 for grammar checking. This has several advantages: the model itself is very powerful, and it allows me to make use of the 'structured ouput' feature and system prompts. It's also the framework I'm most accostumed to.
+- Used Openai's model `gpt-4o-2024-08-06` for grammar checking. This has several advantages: the model itself is very powerful, and it allows me to make use of the 'structured ouput' feature and system prompts. It's also the framework I'm most accostumed to.
 
 
 ## **Challenges Faced**
