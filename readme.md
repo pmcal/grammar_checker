@@ -60,26 +60,26 @@
 
    - **Using `check_grammar.sh` script**:
 
-     1. Ensure the Flask app is running (`flask run`).
-     2. On a separate shell, run the script by passing the input JSON file and specifying an output file:
+        1. Ensure the Flask app is running (`flask run`).
+        2. On a separate shell, run the script by passing the input JSON file and specifying an output file:
 
-     ```bash
-     ./check_grammar.sh input.json output.json
-     ```
+        ```bash
+        ./check_grammar.sh input.json output.json
+        ```
 
-     This will send a POST request to the `/check-grammar` endpoint with the content from `input.json` and store the API response in `output.json`.
+        This will send a POST request to the `/check-grammar` endpoint with the content from `input.json` and store the API response in `output.json`.
     
     - **Making a POST request directly via `curl`**:
 
-     If you prefer to make the request manually, you can use the following `curl` command:
+        If you prefer to make the request manually, you can use the following `curl` command:
 
-     ```bash
-     curl -X POST http://127.0.0.1:5000/check-grammar
-     -H "Content-Type: application/json"
-     -d @input.json -o output.json
-     ```
+        ```bash
+        curl -X POST http://127.0.0.1:5000/check-grammar
+        -H "Content-Type: application/json"
+        -d @input.json -o output.json
+        ```
 
-     This will send the contents of `input.json` to the API and save the response in `output.json`.
+        This will send the contents of `input.json` to the API and save the response in `output.json`.
 
 
 --- 
