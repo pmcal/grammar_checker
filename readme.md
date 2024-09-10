@@ -121,7 +121,7 @@ In this instance, `example_output1.json` looks like this:
 }
 ```
 
-The second example is also short, while the third contains a longer paragraph full of errors. Their output files can also be found in this repo.
+The second example is also short, while the third contains a longer paragraph full of errors. Their input and output files can also be found in this repo.
 
 ---
 
