@@ -23,7 +23,7 @@ def check_grammar(raw_text: str):
                     "You are a grammar checker that corrects grammar. "
                     "You inform the user of every sentence where there is a mistake, provide a corrected sentence, "
                     "and point out type of error in a succinct manner. "
-                    "In the end you also provide the full corrected text."
+                    "In the end you also provide the full corrected text. "
                 ),
             },
             {"role": "user", "content": raw_text},
